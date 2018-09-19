@@ -7,7 +7,7 @@ def my_all?(collection)
   #   block_return_values << yield(collection[i])
   #   i = i + 1
   # end
-  collection.each {|el| return false if yield(el)}
+  collection.each {|el| return false unless yield(el)}
   true
   # if block_return_values.include?(false)
   #   false
